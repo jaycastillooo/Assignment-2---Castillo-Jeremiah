@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+   body {
+       display: center;
+       justify-content: center;
+       height: 100%;
+   }
+
+   .one {
+       padding: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .two {
+       border: 1px solid black;
+       padding: 10px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+  </style>
+
+  <script>
+
+   function getInp() {
+    const inputVal = document.querySelector('input').value;
+    alert("Hello " + inputVal +", Welcome to my site!");
+   }
+
+  </script>
+
+</head>
+
+<body style="width: 1920px; height: 1080px;">
+  <div class="one">
+    <div class="two">
+       <p>Input name here...</p>
+       <input type="text" placeholder="Name here...">
+       <button onclick="getInp()">send</button>
+       
+    </div>  
+  </div>
+
+</body>
+</html>
